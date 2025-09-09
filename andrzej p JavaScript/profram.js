@@ -1,0 +1,23 @@
+let koszt = x;
+let klient = y;
+let reszta = z;
+const p500 = 500;
+let ilosc500 = 2
+const p200 = 200;
+let ilosc200 = 3;
+const p100 = 100;
+let ilosc100 = 7;
+const p50 = 50;
+let ilosc50 =4;
+const p20 = 20;
+let ilosc20 = 12;
+const p10 = 10;
+let ilosc10 = 7;
+const p5 = 5;
+let ilosc5 = 14;
+const p2 = 2;
+let ilosc2 = 27;
+const p1 = 1;
+let ilosc1 =12453;
+z = y-x
+

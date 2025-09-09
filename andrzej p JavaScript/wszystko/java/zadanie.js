@@ -1,0 +1,37 @@
+//zadanie1
+const tab =[1,2,3,4];
+for (const element of tab){
+    console.log(element);
+}
+//zadnie2
+let a = parseInt(prompt("Wprowadź wartość która będzie potęgowana."))
+let b = parseInt(prompt("Wprowadź wartość potęgi."))
+
+if(!isNaN(a) && (b)) {
+    console.log(a**b);
+}
+else{
+    ("Wprowadzona wartość nie jest liczbą");
+}
+//zadanie3
+let h = parseInt(prompt("Wpisz liczbę rzymską"))
+I=1
+V=5
+X=10
+C=100
+M=1000
+//zadanie5
+let j = parseInt(prompt("Wprowadź wartość."))
+for(i=1; i <= j;i++){
+    console.log(i);
+    console.log(i);
+}
+
+//zadnaie8
+const tab1 =[1,2,3,4,5,6,7,8,9];
+for(const element in tab1) {
+    x = 
+ tab1[element] 
+
+}
+console.log(x);
