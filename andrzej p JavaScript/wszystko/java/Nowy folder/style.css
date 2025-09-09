@@ -1,0 +1,11 @@
+.style.Square {
+    list-style-type: square;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+ol {
+    list-style-type: upper-roman;
+}

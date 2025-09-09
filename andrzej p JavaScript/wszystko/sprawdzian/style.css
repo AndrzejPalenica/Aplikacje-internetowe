@@ -1,0 +1,39 @@
+body{
+    background-color: #c2c4c8;
+
+}
+header{
+    height: 7.5vh;
+    line-height: 6vh;
+    text-align: center;
+}
+header > h1{
+    font-family: Tahoma;
+    color: rgb(50, 50, 50);
+}
+aside{
+    width: 30vw;
+    float: right;
+    background-color: #c8c6c4;
+}
+aside > img{
+    width: 90%;
+    margin: 0;
+    display: block;
+
+}
+main{
+    width: 70;
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(200, 198, 196);
+
+}
+section.section-1 > img{
+    float: right;
+
+
+}
+section.section-2{
+    border: 1px detract solid;
+}
