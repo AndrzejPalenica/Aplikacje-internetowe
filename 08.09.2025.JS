@@ -29,9 +29,46 @@
 //document.writeln('ZMIENNA i:' +i);
 // wypisze zmienna i:5
 
-function wypisz(x){
-    for(i=0;i<=x;i++){
-        document.writeln(i+ '<br>');
+
+
+
+// let x = parseInt(prompt('Podaj liczbe'));
+// function wypisz(x){
+//     let suma = 0;
+//     for(i=0;i<=x;i++){
+//         document.writeln(i+ '<br>');
+//        suma += i;
+//     }
+//     return document.writeln (suma);
+// }
+// wypisz(x);
+
+function wypisz_zakres(x){
+    var suma = 0;
+    for(i=0; i<=x; i++){
+        document.writeln(i + '<br>');
+        suma += i;
     }
-};
-wypisz(3);
+    return document.writeln(suma);
+}
+var liczba = parseInt(prompt('Podaj liczbe'));
+wypisz_zakres(liczba);
+
+
+
+// function wypisz_zakres(x){
+//     var suma = 0;
+//     for(i=0; i<=x; i++){
+//         document.writeln(i + '<br>');
+//         suma += i;
+//     }
+//     return suma;
+// }
+// var liczba = parseInt(prompt('Podaj liczbe'));
+// wypisz_zakres(liczba);
+//var z = wypisz_zakres(liczba);
+//document.writeln(z);
+
+
+
+
