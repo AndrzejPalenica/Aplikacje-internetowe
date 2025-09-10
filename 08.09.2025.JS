@@ -43,18 +43,51 @@
 // }
 // wypisz(x);
 
-function wypisz_zakres(x){
-    var suma = 0;
-    for(i=0; i<=x; i++){
-        document.writeln(i + '<br>');
-        suma += i;
-    }
-    return document.writeln(suma);
+
+
+
+// z letami 
+
+function losuj(x){
+    let losowa = parseInt(Math.random()*(x+1));
+    return losowa;
 }
-var liczba = parseInt(prompt('Podaj liczbe'));
-wypisz_zakres(liczba);
+
+function sumuj_losowe(x){
+    let suma = 0;
+    let wylosowana = 0;
+    for(i=0; i<x; i++){
+        wylosowana = losuj(100)
+        document.writeln(wylosowana + '<br>');
+        suma += wylosowana;
+    }
+    return document.writeln("SUMA liczb to:" + suma);
+}
+let liczba = parseInt(prompt('Podaj liczbe'));
+sumuj_losowe(liczba);
+
+// z varami
+
+// function losuj(x){
+//     var losowa = parseInt(Math.random()*(x+1));
+//     return losowa;
+// }
+
+// function sumuj_losowe(x){
+//     var suma = 0;
+//     var wylosowana = 0;
+//     for(i=0; i<x; i++){
+//         wylosowana = losuj(100)
+//         document.writeln(wylosowana + '<br>');
+//         suma += wylosowana;
+//     }
+//     return document.writeln("SUMA liczb to:" + suma);
+// }
+// var liczba = parseInt(prompt('Podaj liczbe'));
+// sumuj_losowe(liczba);
 
 
+//z var 
 
 // function wypisz_zakres(x){
 //     var suma = 0;
