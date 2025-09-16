@@ -300,22 +300,74 @@
 
 
 
+// function losuj(x){
+//     var losowa = parseInt(Math.random()*(x+1));
+//     return losowa;
+// }
+
+// function zlicz_losowe(x){
+//     var tab = [];
+//     var licznik = 0;
+//     for(var i = 0;i < x;i++){
+//         tab[i] = losuj(100);
+//         document.writeln(tab[i] + "<br>");
+//         if(tab[i] < 20){
+//             licznik++;
+//         }
+//     }
+//     return licznik;
+// }
+// var liczba = parseInt(prompt('Podaj liczbe'));
+// document.writeln("Licznik liczb mniejszych od 20 wynosi: " + zlicz_losowe(liczba));
+
+
+
+
+// function losuj(x){
+//     var losowa = parseInt(Math.random()*(x+1));
+//     return losowa;
+// }
+
+// function zlicz_losowe(x,y){
+//     var tab = [];
+//     var licznik = 0;
+//     for(var i = 0;i < x;i++){
+//         tab[i] = losuj(100);
+//         document.writeln(tab[i] + "<br>");
+//         if(tab[i] == y){
+//             licznik++;
+//         }
+//     }
+//     return licznik;
+// }
+// var liczba1 = parseInt(prompt('Podaj x ilość liczb'));
+// var liczba2 = parseInt(prompt('Podaj y jaką liczbę liczyć'));
+// document.writeln("Licznik liczby y wynosi: " + zlicz_losowe(liczba1, liczba2));
+
+
+
 function losuj(x){
     var losowa = parseInt(Math.random()*(x+1));
     return losowa;
 }
 
-function zlicz_losowe(x){
-    var tab = [];
-    var licznik = 0;
-    for(var i = 0;i < x;i++){
-        tab[i] = losuj(100);
-        document.writeln(tab[i] + "<br>");
-        if(tab[i] < 20){
-            licznik++;
+function zlicz_tab(max){
+    var ilosc = losuj(max);
+    var tab =[];
+    var nieparzyste = 0;
+    document.writeln("Zostało wylosowanych "+ ilosc + " liczb.<br>")
+    for(i=0; i < ilosc; i++){
+        tab[i] = losuj(max);
+        document.writeln(tab[i] + '<br>')
+        if(tab[i] % 2 != 0){
+            nieparzyste++;
         }
     }
-    return licznik;
+    return nieparzyste;
 }
 var liczba = parseInt(prompt('Podaj liczbe'));
-document.writeln("Licznik liczb mniejszych od 20 wynosi: " + zlicz_losowe(liczba));
+document.writeln("Liczb nieparzystych jest:" + zlicz_tab(liczba));
+
+
+// tab[tab.length-1]
+
