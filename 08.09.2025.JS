@@ -346,28 +346,80 @@
 
 
 
+// function losuj(x){
+//     var losowa = parseInt(Math.random()*(x+1));
+//     return losowa;
+// }
+
+// function zlicz_tab(max){
+//     var ilosc = losuj(max);
+//     var tab =[];
+//     var nieparzyste = 0;
+//     document.writeln("Zostało wylosowanych "+ ilosc + " liczb.<br>")
+//     for(i=0; i < ilosc; i++){
+//         tab[i] = losuj(max);
+//         document.writeln(tab[i] + '<br>')
+//         if(tab[i] % 2 != 0){
+//             nieparzyste++;
+//         }
+//     }
+//     return nieparzyste;
+// }
+// var liczba = parseInt(prompt('Podaj liczbe'));
+// document.writeln("Liczb nieparzystych jest:" + zlicz_tab(liczba));
+
+
+// tab[tab.length-1]
+
+
+
+
+//do poprawienia
+
+// function losuj2(x){
+//     let losowa = parseInt(Math.random()*(x+1));
+//     return losowa;
+// }
+// function nieobecna(){
+//     const tab = [];
+//     let wylosowana = 0;
+//     let obecna = false;
+//     for(i=0;i < 10;i++){
+//         wylosowana = losuj2(9);   
+//         for(j=0;j < i+1;j++){
+//             if(tab[j] == wylosowana){
+//                 obecna = true;
+//                 break;
+//             }
+//         }
+
+//     }
+//     return tab;
+// }
+// nieobecna();
+
+
+
+
+
+
 function losuj(x){
     var losowa = parseInt(Math.random()*(x+1));
     return losowa;
 }
 
-function zlicz_tab(max){
-    var ilosc = losuj(max);
-    var tab =[];
-    var nieparzyste = 0;
-    document.writeln("Zostało wylosowanych "+ ilosc + " liczb.<br>")
-    for(i=0; i < ilosc; i++){
-        tab[i] = losuj(max);
-        document.writeln(tab[i] + '<br>')
-        if(tab[i] % 2 != 0){
-            nieparzyste++;
+function zlicz_losowe(x,y){
+    var tab = [];
+    var licznik = 0;
+    for(var i = 0;i < x;i++){
+        tab[i] = losuj(100);
+        document.writeln(tab[i] + "<br>");
+        if(tab[i] == y && i % 2 != 0){
+            licznik++;
         }
     }
-    return nieparzyste;
+    return licznik;
 }
-var liczba = parseInt(prompt('Podaj liczbe'));
-document.writeln("Liczb nieparzystych jest:" + zlicz_tab(liczba));
-
-
-// tab[tab.length-1]
-
+var liczba1 = parseInt(prompt('Podaj x ilość liczb'));
+var liczba2 = parseInt(prompt('Podaj y jaką liczbę liczyć'));
+document.writeln("Licznik liczby y wynosi: " + zlicz_losowe(liczba1, liczba2));
