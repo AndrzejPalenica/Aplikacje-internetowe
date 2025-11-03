@@ -39,80 +39,120 @@
 // Andrzej.przedstaw_sie();
 
 
-function gracz(nick_g, hp_g, lvl_g){
-    //cechy
-    this.nick = nick_g;
-    this.hp = hp_g
-    this.lvl = lvl_g
+//GRA strzelanie
+
+// function Gracz(nick_g, hp_g, lvl_g){
+//     this.nick = nick_g;
+//     this.hp = hp_g;
+//     this.lvl = lvl_g;
+
+//     this.wypisz_dane = function(){
+//         document.writeln("NICK: " + this.nick + "<br>HP: " + this.hp + "<br>LVL: " + this.lvl + "<br><br>");
+//     }
+
+//     this.zmien_hp = function(nowe_hp){
+//         this.hp += nowe_hp;
+//     }
+
+//     this.strzel = function(przeciwnik){
+//         //losujemy od 0 do 9
+//         var losowa = parseInt(Math.random()*10);
+//         if(losowa == 0){
+//             document.writeln("HEADSHOT!!!: -80HP <br>");
+//             przeciwnik.zmien_hp(-80);
+//         }else if(losowa > 0 && losowa < 5){
+//             document.writeln("Strzał w KORPUS: -40HP <br>");
+//             przeciwnik.zmien_hp(-40);
+//         }else if(losowa == 5 || losowa == 6){
+//             document.writeln("Strzał w NOGE: -20HP <br>");
+//             przeciwnik.zmien_hp(-20);
+//         }else if(losowa == 7 || losowa == 8){
+//             document.writeln("Strzał w RĘKE: -10HP <br>");
+//             przeciwnik.zmien_hp(-10);
+//         }else{
+//             document.writeln("PUDŁOOOOO!!! <br>");
+//         }
+//     }
+
+// }
+// var gamer1 = new Gracz("Bob13", 100, 5);
+// var gamer2 = new Gracz("Maciek", 100, 5);
+
+// var atakujacy;
+// var obronca;
+
+// var losuj = parseInt(Math.random()*2);
+// if(losuj == 0){
+//     atakujacy = gamer1;
+//     obronca = gamer2;
+// }else{
+//     atakujacy = gamer2;
+//     obronca = gamer1;
+// }
+
+// while(atakujacy.hp > 0){
+//     document.writeln("<br>==============================================<br>");
+//     document.writeln("ATAKUJACY: <br>");
+//     atakujacy.wypisz_dane();
+//     document.writeln("OBRONCA: <br>");
+//     obronca.wypisz_dane();
+    
+//     atakujacy.strzel(obronca);
+
+//     var temp = atakujacy;
+//     atakujacy = obronca;
+//     obronca = temp;
+// }
+
+// if(gamer1.hp <= 0){
+//     document.writeln("WYGRYWA - GRACZ 2 !!!");
+// }else{
+//     document.writeln("WYGRYWA - GRACZ 1 !!!");
+// }
  
-    //zachowania
-    this.wypisz_dane = function() {
-        document.writeln("Nick: " + this.nick + "<br> hp:" + this.hp + "<br> lvl:" + this.lvl + "<br>");
+
+
+// STRING
+
+// var txt = 'JavaScript';
+// var dlugosc = txt.length;
+// // alert(dlugosc);
+// var wycinek = txt.substring(0, 4);
+// document.writeln(wycinek  + '<br>');
+
+
+// var znak = txt.charAt(4);
+// document.writeln(znak + '<br>');
+
+
+// var duze = txt.toUpperCase();
+// document.writeln(duze +  '<br>');
+
+
+// var male = txt.toLowerCase();
+// document.writeln(male + '<br>');
+
+
+// var txt = prompt('Podaj tekst: ');
+// var i = 0; 
+// while(i <= txt.length - 1){
+//     // numer ostatniego znaku w tekśie
+//     document.writeln(txt.charAt(i).toUpperCase() + '<br>');
+//     i++;
+// }
+// document.writeln(txt);
+
+
+var txt = prompt('Podaj tekst: ');
+var i = 0;
+var licznik = 0; 
+while(i <= txt.length - 1){
+    // numer ostatniego znaku w tekśie
+    if(txt.charAt(i).toLowerCase() == 'a'){
+        licznik++;
     }
- 
-    this.zmien_hp = function(zmienione_hp) {
-       this.hp += zmienione_hp;
-    }
- 
-    this.strzel = function(przeciwnik) {
-        // losujemy od o do 9
-        var losowa = parseInt(Math.random()*10);
-        if(losowa == 0){
-            document.writeln("HEADSHOTT!!; -80HP <br>");
-            przeciwnik.zmien_hp(-80);
-         } else if(losowa > 0 && losowa < 5) {
-            document.writeln("STRZAŁ w korpuus: -40HP <br>");
-            przeciwnik.zmien_hp(-40);
- 
-            }else if(losowa == 5 || losowa == 6){
-                document.writeln("Strzał w nogę: -20HP <br>");
-                przeciwnik.zmien_hp(-20);
-            }else if(losowa == 7 || losowa == 8 ){
-                document.writeln("Strzał w rękę: -10HP <br>");
-                przeciwnik.zmien_hp(-10);
-            }else{
-                document.writeln("Pudłoooooo!! <br>");
-            }
- 
- 
-       
-    }
+    i++;
 }
- 
-//tworzenie obiektu
-var gracz1 = new gracz("Maks", 100, 5);
-var gamer2 = new gracz("Maciek", 100, 5);
- 
-var atakujacy;
-var obronca;
- 
-var losowa = parseInt(Math.random()*2);
-if(losowa == 0){
-    atakujacy = gracz1;
-    obronca = gamer2
-}else{
-    atakujacy = gamer2;
-    obronca = gracz1
-}
- 
- 
- 
-while(obronca.hp > 0){
-    document.writeln("Atakujacy: <br>");
-    atakujacy.wypisz_dane;
-    document.writeln("Obronca: <br>");
-    obronca.wypisz_dane;
- 
-    atakujacy.strzel(obronca);
- 
-    var temp = atakujacy;
-    atakujacy = obronca;
-    obronca = temp;
-}
- 
-if(gracz1.hp <= 0){
-    document.writeln("Wygrywa- gracz 2 !!");
-}else{
-    document.writeln("Wygrywa- gracz 1 !!");
-}
- 
+document.writeln('Licnik wynosi: ' + licznik);
+
+
