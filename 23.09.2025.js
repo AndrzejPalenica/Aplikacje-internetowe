@@ -143,16 +143,100 @@
 // document.writeln(txt);
 
 
-var txt = prompt('Podaj tekst: ');
+// var txt = prompt('Podaj tekst: ');
+// var i = 0;
+// var licznik = 0; 
+// while(i <= txt.length - 1){
+//     // numer ostatniego znaku w tekśie
+//     if(txt.charAt(i).toLowerCase() == 'a'){
+//         licznik++;
+//     }
+//     i++;
+// }
+// document.writeln('Licnik wynosi: ' + licznik);
+
+
+
+
+
+
+//LICZNIK SŁOW
+
+
+// var txt = prompt("Podaj test: ");
+// var licznik = 0;
+// var i = 0;
+// var wyrazy;
+// while( i <= txt.length-1){
+//     if(txt.charAt(i) == " " ){
+//         //txt.chartAt(i) == "a" || txt.charAt(i) == "A"
+//         licznik++;
+//     }
+//     i++;
+// }
+ 
+// if(txt.length == 0){
+//     wyrazy = 0;
+// }else{
+//     wyrazy = licznik + 1;
+// }
+// document.writeln(wyrazy);
+ 
+ 
+
+// LICZNIK SŁÓW UPGRADE
+
+// var txt = prompt("Podaj tekst: ");
+// var licznik = 0;
+// var wyrazy;
+// var i = 0;
+// while(i <= txt.length-1){
+//         //numer ostatniego znaku w tekście
+//         if(i == 0 && txt.charAt(i) == " "){
+//             //pierwsza spacja - nie zwiekszamy licznika
+//         }else if(i > 0 && txt.charAt(i) == " " && txt.charAt(i-1) == " "){
+//             //kolejna spacja - nie zwiekszamy licznika
+//         }else if(txt.charAt(i) == " "){
+//             licznik++;
+//         }
+
+//         if(txt.charAt(i) == " " && i == txt.length-1){
+//             licznik--;
+//             //spacje na końcu - odejmujemy
+//         }
+//         i++;
+// }
+
+// if(txt.length == 0){
+//     wyrazy = 0;
+// }else{
+//     wyrazy = licznik + 1;
+// }
+
+// document.writeln(wyrazy);
+
+
+
+//LICZNIK CYFR
+
+// if(!isNaN(txt.charAt(i)) && txt.charAt(i)!=' ')
+
+var txt = prompt("Podaj tekst: ");
+var licznik = 0;
 var i = 0;
-var licznik = 0; 
-while(i <= txt.length - 1){
-    // numer ostatniego znaku w tekśie
-    if(txt.charAt(i).toLowerCase() == 'a'){
+while(i <= txt.length-1){
+    if(Number(txt.charAt(i))){
         licznik++;
     }
     i++;
 }
-document.writeln('Licnik wynosi: ' + licznik);
+if( licznik == txt.length){
+    document.writeln('Tak' + '<br>');
+}
+else{
+    document.writeln('Nie' + '<br>');
+}
+document.writeln('Licznik cyfr to ' + licznik + ' z ' + txt.length + ' znaków.');
+
 
 
