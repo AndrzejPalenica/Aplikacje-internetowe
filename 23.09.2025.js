@@ -39,7 +39,7 @@
 // Andrzej.przedstaw_sie();
 
 
-//GRA strzelanie
+//  // GRA strzelanie
 
 // function Gracz(nick_g, hp_g, lvl_g){
 //     this.nick = nick_g;
@@ -112,7 +112,7 @@
  
 
 
-// STRING
+// // STRING
 
 // var txt = 'JavaScript';
 // var dlugosc = txt.length;
@@ -160,7 +160,7 @@
 
 
 
-//LICZNIK SŁOW
+// // LICZNIK SŁOW
 
 
 // var txt = prompt("Podaj test: ");
@@ -184,7 +184,7 @@
  
  
 
-// LICZNIK SŁÓW UPGRADE
+// // LICZNIK SŁÓW UPGRADE
 
 // var txt = prompt("Podaj tekst: ");
 // var licznik = 0;
@@ -217,26 +217,46 @@
 
 
 
-//LICZNIK CYFR
+// // LICZNIK CYFR
 
-// if(!isNaN(txt.charAt(i)) && txt.charAt(i)!=' ')
+// // if(!isNaN(txt.charAt(i)) && txt.charAt(i)!=' ')
 
-var txt = prompt("Podaj tekst: ");
-var licznik = 0;
-var i = 0;
-while(i <= txt.length-1){
-    if(Number(txt.charAt(i))){
-        licznik++;
-    }
-    i++;
-}
-if( licznik == txt.length){
-    document.writeln('Tak' + '<br>');
-}
-else{
-    document.writeln('Nie' + '<br>');
-}
-document.writeln('Licznik cyfr to ' + licznik + ' z ' + txt.length + ' znaków.');
+// var txt = prompt("Podaj tekst: ");
+// var licznik = 0;
+// var i = 0;
+// while(i <= txt.length-1){
+//     if(Number(txt.charAt(i))){
+//         licznik++;
+//     }
+//     i++;
+// }
+// if( licznik == txt.length){
+//     document.writeln('Tak' + '<br>');
+// }
+// else{
+//     document.writeln('Nie' + '<br>');
+// }
+// document.writeln('Licznik cyfr to ' + licznik + ' z ' + txt.length + ' znaków.');
+
+
+
+
+
+
+
+// // PORÓWNYWANIE 1 I OSTATNIEJ LITERY
+
+// var txt = prompt('wprowadz tekst');
+// document.writeln('Czy pierwszy i ostatni znak są takie same: ');
+// if(txt.charAt(0) == txt.charAt(txt.length - 1)){
+//     document.writeln('TAK');
+// }
+// else{
+//     document.writeln('NIE');
+// }
+
+
+
 
 
 
