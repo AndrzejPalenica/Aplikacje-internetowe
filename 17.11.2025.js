@@ -35,17 +35,56 @@
 // */
 
 
-document.writeln(window.innerHeight + "px - wysokość<br>" + window.innerWidth + "px - szerokość<br>");
+// document.writeln(window.innerHeight + "px - wysokość<br>" + window.innerWidth + "px - szerokość<br>");
 
 
-var okno = window.open("https://www.zsht.pl", 'moje_okno', 'height=600, width=600, top=200, left=400');
+// var okno = window.open("https://www.zsht.pl", 'moje_okno', 'height=600, width=600, top=200, left=400');
 
-// window.setTimeout("okno.close()", 3000);
+// // window.setTimeout("okno.close()", 3000);
 
 
-function sprawdz_okno(){
-    if(okno.innerWidth < 200){
-        okno.close();
-    }
-}
-window.setInterval("sprawdz_okno()", 250)
+// function sprawdz_okno(){
+//     if(window.innerWidth < 500){
+//         okno.close();
+//     }
+// }
+// window.setInterval("sprawdz_okno()", 250);
+
+
+// var licznik = 0;
+
+// function uwaga(){
+//     alert("NIE WCHODŹ NA STRONE");
+//     licznik++;
+//     if(licznik > 2){
+//         // ZATRZYMAĆ INTERWAŁ
+//         window.clearInterval(inter);
+//     }
+// }
+
+
+
+// var inter = window.setInterval("uwaga()", 2000);
+
+
+
+
+
+// document.writeln("href " + location.href + "<br>");
+// document.writeln("protocol " + location.protocol + "<br>");
+// document.writeln("hostname " + location.hostname + "<br>");
+// document.writeln("pathname " + location.pathname + "<br>");
+// document.writeln("port " + location.port + "<br>");
+
+
+
+
+// location.href = 'https://zsht.pl';
+
+// location.replace("https://zsht.pl");
+
+
+var blok1 = document.getElementById('div-1');
+
+var tekst = prompt("Wprowdz tekst: ");
+blok1.innerText = tekst;
