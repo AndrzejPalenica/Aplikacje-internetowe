@@ -84,7 +84,64 @@
 // location.replace("https://zsht.pl");
 
 
+
+
+
+
+
+
 var blok1 = document.getElementById('div-1');
 
-var tekst = prompt("Wprowdz tekst: ");
-blok1.innerText = tekst;
+// var tekst = prompt("Wprowdz tekst: ");
+// blok1.innerText = tekst;
+
+// blok1.innerHTML = tekst;
+
+
+
+
+// alert(blok1.getAttribute("style"));
+// blok1.setAttribute("style","color: green;");
+
+
+
+
+
+
+
+
+
+// var stary_styl = blok1.getAttribute("style");
+// stary_styl += "color: green;";
+// blok1.setAttribute("style", stary_styl);
+
+
+
+
+
+
+
+
+
+// var obr = document.getElementById("obrazek");
+// function podmien_obraz(){
+//     obr.setAttribute("src", "grafika/mozaika")
+// }
+// window.setTimeout('podmien_obraz()', 3000);
+
+
+
+
+var obr = document.getElementById("obrazek");
+var i = 2;
+function zmien_obr(){
+    // var sciezka = "grafika/" + i +".jpg";
+    obr.setAttribute("src","grafika/" + i +".jpg");
+    // obr.setAttribute("src", sciezka);
+    i++;
+    if(i > 4){
+        i = 1;
+    }
+}
+
+window.setInterval("zmien_obr()", 2000);
