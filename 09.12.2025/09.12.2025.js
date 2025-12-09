@@ -1,0 +1,38 @@
+var div1 = document.querySelector("#div1");
+
+div1.style.height = "200px";
+div1.style.width = "10px";
+div1.style.backgroundColor = "green";
+div1.style.border = "5px solid black"
+
+
+// var tekst = prompt("podaj tekst");
+
+// if(tekst.length > 10){
+//     div1.style.color = "red";
+//     div1.innerHTML = tekst + "<br>" + tekst + "<br>" + tekst;
+// }
+// else{
+//     div1.innerText = tekst + " " + tekst + " " + tekst;
+// }
+
+
+var width = 10;
+function width_up(){
+    if(width > 1800){
+        width = 10;     
+    }
+    width += 10;
+    div1.style.width = width + "px"
+
+    if(width <= 600){
+        div1.style.backgroundColor = "red";
+    }
+    else if(600 < width < 1200){
+        div1.style.backgroundColor = "yellow";
+    }
+
+
+
+}
+window.setInterval("width_up()", 20);

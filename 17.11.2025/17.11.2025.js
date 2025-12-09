@@ -97,7 +97,7 @@
 
 
 
-var blok1 = document.getElementById('div-1');
+// var blok1 = document.getElementById('div-1');
 
 
 
@@ -166,7 +166,7 @@ var blok1 = document.getElementById('div-1');
 
 
 // blok1.style.backgroundColor = 'rgba(32, 165, 121, 1)';
-blok1.style.border = 'green 10px solid'
+// blok1.style.border = 'green 10px solid'
 
 
 
@@ -183,29 +183,30 @@ blok1.style.border = 'green 10px solid'
 
 
 
+// kwadrat ruchomy
+
+// function losuj_kolor(){
+//     var kolor = '';
+//     var r = parseInt(Math.random()*256)
+//     var g = parseInt(Math.random()*256)
+//     var b = parseInt(Math.random()*256)
+//     kolor = "rgb(" + r + " , " + g + " , " + b + ")";
+//     blok1.style.backgroundColor = kolor;
 
 
-function losuj_kolor(){
-    var kolor = '';
-    var r = parseInt(Math.random()*256)
-    var g = parseInt(Math.random()*256)
-    var b = parseInt(Math.random()*256)
-    kolor = "rgb(" + r + " , " + g + " , " + b + ")";
-    blok1.style.backgroundColor = kolor;
+//     var kolor2 = '';
+//     var r2 = parseInt(Math.random()*256)
+//     var g2 = parseInt(Math.random()*256)
+//     var b2 = parseInt(Math.random()*256)
+//     kolor2 = "rgb(" + r2 + " , " + g2 + " , " + b2 + ")";
+//     blok1.style.borderColor = kolor2;
 
 
-    var kolor2 = '';
-    var r2 = parseInt(Math.random()*256)
-    var g2 = parseInt(Math.random()*256)
-    var b2 = parseInt(Math.random()*256)
-    kolor2 = "rgb(" + r2 + " , " + g2 + " , " + b2 + ")";
-    blok1.style.borderColor = kolor2;
+//     var top  = parseInt(Math.random()*800);
+//     var left = parseInt(Math.random()*1500);
+//     blok1.style.position = "absolute";   
+//     blok1.style.top = top + "px";
+//     blok1.style.left = left + "px";
+// }
+// window.setInterval("losuj_kolor()",2500);
 
-
-    var top  = parseInt(Math.random()*800);
-    var left = parseInt(Math.random()*1500);
-    blok1.style.position = "absolute";   
-    blok1.style.top = top + "px";
-    blok1.style.left = left + "px";
-}
-window.setInterval("losuj_kolor()",2500);
