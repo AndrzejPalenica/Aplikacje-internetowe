@@ -1,9 +1,8 @@
-var div1 = document.querySelector("#div1");
+// var div1 = document.querySelector("#div1");
 
-div1.style.height = "200px";
-div1.style.width = "10px";
-div1.style.backgroundColor = "green";
-div1.style.border = "5px solid black"
+// div1.style.height = "200px";
+// div1.style.width = "10px";
+// div1.style.border = "5px solid black"
 
 
 // var tekst = prompt("podaj tekst");
@@ -17,22 +16,39 @@ div1.style.border = "5px solid black"
 // }
 
 
-var width = 10;
-function width_up(){
-    if(width > 1800){
-        width = 10;     
-    }
-    width += 10;
-    div1.style.width = width + "px"
+// var width = 10;
+// function width_up(){
+//     if(width > 1800){
+//         width = 10;     
+//     }
+//     else{
+        
+//     }
+//     width += 10;
+//     div1.style.width = width + "px"
 
-    if(width <= 600){
-        div1.style.backgroundColor = "red";
-    }
-    else if(600 < width < 1200){
-        div1.style.backgroundColor = "yellow";
-    }
+//     if(width <= 600){
+//         div1.style.backgroundColor = "red";
+//     }
+//     else if(600 < width < 1200){
+//         div1.style.backgroundColor = "yellow";
+//     }
+//     else if(width > 1200){
+//         div1.style.backgroundColor = "green";
+//     }
+// }
+// window.setInterval("width_up()", 20);
 
 
 
-}
-window.setInterval("width_up()", 20);
+
+
+var element = document.createElement("div");
+
+element.innerText = "NOWY DIV";
+
+var div_blok =  document.getElementById("blok");
+
+div_blok.append(element);
+
+div_blok.style.backgroundColor =   "yellow";
