@@ -1,0 +1,13 @@
+#id_1{
+    font-size: 30px;
+    color: red;
+}
+
+.klasa_1{
+    background-color: aqua;
+    text-decoration: underline;
+}
+
+.klasa_2{
+    border: green 5px double;
+}

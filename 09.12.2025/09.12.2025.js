@@ -49,6 +49,26 @@ element.innerText = "NOWY DIV";
 
 var div_blok =  document.getElementById("blok");
 
-div_blok.append(element);
+// div_blok.prepend(element);
+div_blok.after(element);
 
 div_blok.style.backgroundColor =   "yellow";
+//priorytet taki jak styl wpisany(priorytet większy od arkusza zewnętrznego)
+
+
+// div_blok.classList.add("klasa_1");
+// div_blok.classList.add("klasa_2");
+
+div_blok.classList.add("klasa_1","klasa_2");
+div_blok.classList.remove("klasa_2");
+
+
+// div_blok.classList.toggle("klasa_2");
+alert(div_blok.classList);
+
+div_blok.classList.contains("klasa_1"); 
+
+
+// div_blok.id = "";
+
+element.id = "id_1"
