@@ -1,4 +1,4 @@
-#id_1{
+/* #id_1{
     font-size: 30px;
     color: red;
 }
@@ -10,4 +10,16 @@
 
 .klasa_2{
     border: green 5px double;
+} */
+
+
+.klasa10{
+    color: white;
+    background-color: red;
+}
+.klasa_even{
+    background-color: bisque;
+}
+.klasa_odd{
+    background-color: rgb(87, 51, 8);
 }
