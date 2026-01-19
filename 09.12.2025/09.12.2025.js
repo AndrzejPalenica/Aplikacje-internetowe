@@ -101,4 +101,3 @@ for(i = 1; i <= x; i++){
         list_li.classList.add("klasa10");
     }
 }
-
