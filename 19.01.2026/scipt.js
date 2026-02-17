@@ -1,4 +1,6 @@
 var div = document.getElementById("blok");
+var img1 = document.getElementById("img1");
+var img2 = document.getElementById("img2");
 
 // var wzorzec = /^[0-9]+[a-z]+$/;
 // var tekst = prompt("Podaj tekst");
@@ -57,22 +59,88 @@ var div = document.getElementById("blok");
 
 
 
-function zmien_kolor(kolor){
+// function zmien_kolor(kolor){
+//     div.style.backgroundColor = kolor;
+// }
+// function ustaw(){
+//     div.style.border = "1px solid black";
+//     div.style.backgroundColor = "red"
+// }
+
+
+// div.addEventListener("mouseover", function(){
+//     zmien_kolor("green");
+// });
+
+// div.addEventListener("mouseout", function(){
+//     zmien_kolor("aqua");
+// });
+
+
+// div.addEventListener("dblclick", ustaw);
+
+
+
+
+
+// function zmien_kolor_aqua(kolor){
+//     div.style.backgroundColor = kolor;
+// }
+// function zmien_kolor(){
+//     var r = parseInt(Math.random()*256);
+//     var g = parseInt(Math.random()*256);
+//     var b = parseInt(Math.random()*256);
+//     div.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+// }
+// function ustaw(){
+//     div.style.border = "1px solid black";
+//     div.style.backgroundColor = "red"
+//     div.innerText = "WYGRAŁEŚ";
+// }
+
+
+// div.addEventListener("mouseover", zmien_kolor);
+
+// div.addEventListener("mouseout", function(){
+//     zmien_kolor_aqua("aqua");
+// });
+
+
+// div.addEventListener("dblclick", ustaw);
+
+
+
+
+
+
+
+
+function zmien_kolor_2(kolor){
     div.style.backgroundColor = kolor;
 }
-function ustaw(){
-    div.style.border = "1px solid black";
-    div.style.backgroundColor = "red"
+function zmien_kolor(){
+    var r = parseInt(Math.random()*256);
+    var g = parseInt(Math.random()*256);
+    var b = parseInt(Math.random()*256);
+    div.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
 }
-
-
-div.addEventListener("mouseover", function(){
-    zmien_kolor("green");
-});
-
+div.addEventListener("mouseover", zmien_kolor);
 div.addEventListener("mouseout", function(){
-    zmien_kolor("aqua");
+    zmien_kolor_2("aqua");
 });
 
+function zwieksz(){
+    var i = parseInt(div.innerText);
+    div.innerText = i + 1;
+}
+div.addEventListener("click", zwieksz);
 
-div.addEventListener("dblclick", ustaw);
+
+function dzien(){
+    
+}
+function noc(){
+    
+}
+img1.addEventListener("click", dzien);
+img2.addEventListener("click", noc);
