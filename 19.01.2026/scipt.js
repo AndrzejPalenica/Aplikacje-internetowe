@@ -1,6 +1,7 @@
 var div = document.getElementById("blok");
 var img1 = document.getElementById("img1");
 var img2 = document.getElementById("img2");
+var article = document.getElementById("article")
 
 // var wzorzec = /^[0-9]+[a-z]+$/;
 // var tekst = prompt("Podaj tekst");
@@ -137,10 +138,18 @@ div.addEventListener("click", zwieksz);
 
 
 function dzien(){
-    
+    if(article.classList.contains("night")){
+        article.classList.remove("night");
+    }
+    article.classList.add("day");
 }
 function noc(){
-    
+    if(article.classList.contains("day")){
+        article.classList.remove("day");
+    }
+    article.classList.add("night");    
 }
 img1.addEventListener("click", dzien);
 img2.addEventListener("click", noc);
+
+
