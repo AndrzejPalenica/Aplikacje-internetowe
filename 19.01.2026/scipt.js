@@ -1,90 +1,126 @@
-var div = document.getElementById("blok");
-var img1 = document.getElementById("img1");
-var img2 = document.getElementById("img2");
-var article = document.getElementById("article")
-
-// var wzorzec = /^[0-9]+[a-z]+$/;
-// var tekst = prompt("Podaj tekst");
-// if(wzorzec.test(tekst)){
-//     //poprawny
-//     div.innerText = "Jest Git";
-// }
-// else{
-//     //niepoprawny
-//     div.innerText = "nie jest git";
-// }
+// var div = document.getElementById("blok");
+// var img = document.getElementById("img");
+// var img1 = document.getElementById("img1");
+// var img2 = document.getElementById("img2");
+// var article = document.getElementById("article");
+// var lista = document.getElementById("lista");
+// var add = document.getElementById("add");
 
 
-
-
-// var wzorzec_kod = /^[0-9]{2}\-[0-9]{3}$/;
-// var tekst = prompt("Podaj tekst");
-// if(wzorzec_kod.test(tekst)){
-//     //poprawny
-//     div.innerText = "Jest Git";
-// }
-// else{
-//     //niepoprawny
-//     div.innerText = "nie jest git";
-// }
+// // var wzorzec = /^[0-9]+[a-z]+$/;
+// // var tekst = prompt("Podaj tekst");
+// // if(wzorzec.test(tekst)){
+// //     //poprawny
+// //     div.innerText = "Jest Git";
+// // }
+// // else{
+// //     //niepoprawny
+// //     div.innerText = "nie jest git";
+// // }
 
 
 
 
-// var wzorzec_rjestracja = /^(KTT|KNT)[0-9A-Z]{4}$/;
-// var tekst = prompt("Podaj tekst");
-// if(wzorzec_rjestracja.test(tekst)){
-//     //poprawny
-//     div.innerText = "Jest Git";
-// }
-// else{
-//     //niepoprawny
-//     div.innerText = "nie jest git";
-// }
-
-
-// function zmien(){
-//     div.innerText = "WYGRAŁEŚ!!!";
-// }
-// function kolor_wjazd(){
-//     div.style.backgroundColor = "green";
-// }
-// function kolor_wyjazd(){
-//     div.style.backgroundColor = "aqua";
-// }
-// div.addEventListener("mouseover", kolor_wjazd);
-// div.addEventListener("mouseout", kolor_wyjazd);
-// // kolor_wjazd() - jak odrazu ma sie wyonać bez () to jak listener nasłucha
+// // var wzorzec_kod = /^[0-9]{2}\-[0-9]{3}$/;
+// // var tekst = prompt("Podaj tekst");
+// // if(wzorzec_kod.test(tekst)){
+// //     //poprawny
+// //     div.innerText = "Jest Git";
+// // }
+// // else{
+// //     //niepoprawny
+// //     div.innerText = "nie jest git";
+// // }
 
 
 
 
-
-// function zmien_kolor(kolor){
-//     div.style.backgroundColor = kolor;
-// }
-// function ustaw(){
-//     div.style.border = "1px solid black";
-//     div.style.backgroundColor = "red"
-// }
-
-
-// div.addEventListener("mouseover", function(){
-//     zmien_kolor("green");
-// });
-
-// div.addEventListener("mouseout", function(){
-//     zmien_kolor("aqua");
-// });
+// // var wzorzec_rjestracja = /^(KTT|KNT)[0-9A-Z]{4}$/;
+// // var tekst = prompt("Podaj tekst");
+// // if(wzorzec_rjestracja.test(tekst)){
+// //     //poprawny
+// //     div.innerText = "Jest Git";
+// // }
+// // else{
+// //     //niepoprawny
+// //     div.innerText = "nie jest git";
+// // }
 
 
-// div.addEventListener("dblclick", ustaw);
+// // function zmien(){
+// //     div.innerText = "WYGRAŁEŚ!!!";
+// // }
+// // function kolor_wjazd(){
+// //     div.style.backgroundColor = "green";
+// // }
+// // function kolor_wyjazd(){
+// //     div.style.backgroundColor = "aqua";
+// // }
+// // div.addEventListener("mouseover", kolor_wjazd);
+// // div.addEventListener("mouseout", kolor_wyjazd);
+// // // kolor_wjazd() - jak odrazu ma sie wyonać bez () to jak listener nasłucha
 
 
 
 
 
-// function zmien_kolor_aqua(kolor){
+// // function zmien_kolor(kolor){
+// //     div.style.backgroundColor = kolor;
+// // }
+// // function ustaw(){
+// //     div.style.border = "1px solid black";
+// //     div.style.backgroundColor = "red"
+// // }
+
+
+// // div.addEventListener("mouseover", function(){
+// //     zmien_kolor("green");
+// // });
+
+// // div.addEventListener("mouseout", function(){
+// //     zmien_kolor("aqua");
+// // });
+
+
+// // div.addEventListener("dblclick", ustaw);
+
+
+
+
+
+// // function zmien_kolor_aqua(kolor){
+// //     div.style.backgroundColor = kolor;
+// // }
+// // function zmien_kolor(){
+// //     var r = parseInt(Math.random()*256);
+// //     var g = parseInt(Math.random()*256);
+// //     var b = parseInt(Math.random()*256);
+// //     div.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+// // }
+// // function ustaw(){
+// //     div.style.border = "1px solid black";
+// //     div.style.backgroundColor = "red"
+// //     div.innerText = "WYGRAŁEŚ";
+// // }
+
+
+// // div.addEventListener("mouseover", zmien_kolor);
+
+// // div.addEventListener("mouseout", function(){
+// //     zmien_kolor_aqua("aqua");
+// // });
+
+
+// // div.addEventListener("dblclick", ustaw);
+
+
+
+
+
+
+
+
+// function zmien_kolor_2(kolor){
 //     div.style.backgroundColor = kolor;
 // }
 // function zmien_kolor(){
@@ -93,63 +129,108 @@ var article = document.getElementById("article")
 //     var b = parseInt(Math.random()*256);
 //     div.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
 // }
-// function ustaw(){
-//     div.style.border = "1px solid black";
-//     div.style.backgroundColor = "red"
-//     div.innerText = "WYGRAŁEŚ";
-// }
-
-
 // div.addEventListener("mouseover", zmien_kolor);
-
 // div.addEventListener("mouseout", function(){
-//     zmien_kolor_aqua("aqua");
+//     zmien_kolor_2("aqua");
 // });
 
-
-// div.addEventListener("dblclick", ustaw);
-
-
-
-
-
+// function zwieksz(){
+//     var i = parseInt(div.innerText);
+//     div.innerText = i + 1;
+// }
+// div.addEventListener("click", zwieksz);
 
 
 
-function zmien_kolor_2(kolor){
-    div.style.backgroundColor = kolor;
+
+
+
+// // // Tryb dzienny nocny
+
+// // function dzien(){
+// //     if(article.classList.contains("night")){
+// //         article.classList.remove("night");
+// //     }
+// //     article.classList.add("day");
+// // }
+// // function noc(){
+// //     if(article.classList.contains("day")){
+// //         article.classList.remove("day");
+// //     }
+// //     article.classList.add("night");    
+// // }
+// // img1.addEventListener("click", dzien);
+// // img2.addEventListener("click", noc);
+
+
+
+
+// function mode(){
+//     if(article.classList.contains("night")){
+//         article.classList.remove("night");
+//         article.classList.add("day");
+//         img.src = '2.jpg';
+//     }
+//     else{
+//         article.classList.remove("day");
+//         article.classList.add("night");
+//         img.src = '1.jpg';
+//     }
+// };
+
+// img.addEventListener("click", mode);
+
+
+// let i = 1;
+// function add_list(){
+//     var element = document.createElement("li");
+//     element.style.backgroundColor = "yellow";
+//     element.innerText = i;
+//     element.addEventListener("click", function(){
+//         if(this.style.backgroundColor == "yellow"){
+//             this.style.backgroundColor = "green";
+//         }
+//         else if(this.style.backgroundColor == "green"){
+//             this.style.backgroundColor = "orange";
+//         }
+//         else if(this.style.backgroundColor == "orange"){
+//             this.style.backgroundColor = "red";
+//         }
+//         else if(this.style.backgroundColor == "red"){
+//             this.style.backgroundColor = "yellow";
+//         }
+//     });
+//     lista.append(element);
+//     i = i + 1;
+
+// };
+
+// add.addEventListener("click", add_list);
+
+
+// // var x = lista.getAttribute("style");
+// // alert(x);
+// // to pobiera tylko styl wpisany
+// // tak samo to  this.style.backgroundColor == "yellow"  nie pobiera z css zewnętrznego
+
+
+
+
+
+
+//  koniec zakomentowanej części 1
+
+
+
+
+
+let kalendarz = document.getElementById("kalendarz");
+
+for(i = 1; i < 6; i++){
+    let dzien = document.createElement("div");
+    dzien.classList.add("blok_dzien");
+    dzien.style.backgroundColor = "white";
+
+    dzien.innerText = i;
+    kalendarz.append(dzien);
 }
-function zmien_kolor(){
-    var r = parseInt(Math.random()*256);
-    var g = parseInt(Math.random()*256);
-    var b = parseInt(Math.random()*256);
-    div.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
-}
-div.addEventListener("mouseover", zmien_kolor);
-div.addEventListener("mouseout", function(){
-    zmien_kolor_2("aqua");
-});
-
-function zwieksz(){
-    var i = parseInt(div.innerText);
-    div.innerText = i + 1;
-}
-div.addEventListener("click", zwieksz);
-
-
-function dzien(){
-    if(article.classList.contains("night")){
-        article.classList.remove("night");
-    }
-    article.classList.add("day");
-}
-function noc(){
-    if(article.classList.contains("day")){
-        article.classList.remove("day");
-    }
-    article.classList.add("night");    
-}
-img1.addEventListener("click", dzien);
-img2.addEventListener("click", noc);
-
-

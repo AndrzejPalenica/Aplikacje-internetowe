@@ -1,3 +1,9 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+/* 
+
 #blok{
     width: 200px;
     height: 200px;
@@ -19,4 +25,43 @@ article{
 .day{
     background-color: white;
     color: black;
+}
+
+
+#lista{
+    background-color: rgb(116, 116, 84);
+    width: 300px;
+    border: 1px solid black;
+}
+
+#lista > li{ */
+    /* background-color: yellow; */
+    /* margin-top: 1px;
+    list-style-type: square;
+} */
+
+
+
+
+
+
+/* koniec zakomentowanej części 1 */
+
+
+
+
+
+
+
+#kalendarz{
+    background-color: paleturquoise;
+    border: rgb(0, 96, 221);
+}
+
+
+
+.blok_dzien{
+    border:  2px solid blue;
+    width: 100px;
+    height: 100px;
 }
