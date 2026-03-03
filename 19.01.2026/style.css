@@ -1,7 +1,7 @@
-/* *{
+*{
     margin: 0px;
     padding: 0px;
-} */
+}
 /* 
 
 #blok{
@@ -50,18 +50,46 @@ article{
 
 
 
-
+body{
+    background-color: black;
+}
 
 
 #kalendarz{
-    background-color: paleturquoise;
+    padding: 10px;
+    width: 1500px;
+    /* background-color: paleturquoise; */
+    background-color: rgb(44, 37, 16);
     border: rgb(0, 96, 221);
+    height: 1060px;
 }
 
 
 
 .blok_dzien{
+    /* background-color: rgb(155, 137, 131); */
     border:  2px solid blue;
-    width: 100px;
-    height: 100px;
+    width: 180px;
+    height: 180px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+    padding: 10px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.notatka{
+    font-size: 16x;
+    line-height: 150%;
+    font-weight: normal;
+}
+#delete{
+    margin: 20px;
+    width: 200px;
+    background-color: cornsilk;
+    border:  4px solid rosybrown;
+    border-radius: 20px;
+    font-size: 40px;
+    text-align: center;
+
 }

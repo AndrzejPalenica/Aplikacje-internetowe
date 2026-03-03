@@ -222,15 +222,54 @@
 
 
 
-
-
+let del = 0;
+let del_button = document.getElementById("delete");
+del_button.addEventListener("click", function(){
+    if(del == 0){
+        del = 1;
+        del_button.innerText = "DELETE ON"
+    }
+    else{
+        del = 0;
+        del_button.innerText = "DELETE OFF"
+    }
+});
 let kalendarz = document.getElementById("kalendarz");
 
-for(i = 1; i < 6; i++){
+for(i = 1; i < 31; i++){
     let dzien = document.createElement("div");
     dzien.classList.add("blok_dzien");
     dzien.style.backgroundColor = "white";
-
     dzien.innerText = i;
+    if(i%7 == 0){
+        dzien.style.color = "red";
+    }
+    dzien.addEventListener("click", function(){
+        if(this.style.backgroundColor == "white"){
+            this.style.backgroundColor = "green";
+        }
+        else if(this.style.backgroundColor == "green"){
+            this.style.backgroundColor = "orange";
+        }
+        else if(this.style.backgroundColor == "orange"){
+            this.style.backgroundColor = "lightpink";
+        }
+        else if(this.style.backgroundColor == "lightpink"){
+            this.style.backgroundColor = "white";
+        }
+    });
+    dzien.addEventListener("contextmenu", function(){
+        if(del == 0){
+        let text = prompt("Podaj tresc notatki: ");
+        let notatka = document.createElement("div");
+        notatka.classList.add("notatka");
+        notatka.innerText = text;
+        this.append(notatka);
+        }
+        else{
+            this.innerHTML = "";
+        }
+    });
     kalendarz.append(dzien);
 }
+
