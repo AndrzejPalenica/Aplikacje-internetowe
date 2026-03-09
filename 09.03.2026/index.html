@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formularz">
+        <label for="login">Login:</label>
+        <input type="text" id="login">
+        <div id="login-alert"></div>
+
+        <label for="pin">PIN:</label>
+        <input type="number" id="pin" step="1" min="0" max="9999">
+        <div id="pin-alert"></div>
+
+        <label for="haslo">Hasło:</label>
+        <input type="password" id="haslo">
+        <div id="password-alert"></div>
+
+        <button id="btn">WYŚLIJ</button>
+
+    </form>
+</body>
+</html>

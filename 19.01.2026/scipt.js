@@ -267,7 +267,8 @@ for(i = 1; i < 31; i++){
         this.append(notatka);
         }
         else{
-            this.innerHTML = "";
+            let liczba  = this.innerText.charAt(0) + this.innerText.charAt(1);
+            this.innerText = liczba;
         }
     });
     kalendarz.append(dzien);
