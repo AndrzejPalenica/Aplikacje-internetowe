@@ -48,6 +48,37 @@ btn.addEventListener("click", function(){
     if(valid){
         check_info.innerText = "POPRAWNE";
         check_info.style.color = "green";
+
+        if(document.getElementById("plec_k").checked == true){
+            document.getElementById("wybrana_plec").innerText = "Wybrana płeć to KOBIETA";
+        }
+        else{
+            document.getElementById("wybrana_plec").innerText = "Wybrana płeć to MĘŻCZYZNA";
+        }
+
+        var hobby = "";
+        if(document.getElementById("inf_check").checked){
+            hobby += "informatyka, ";
+        }
+        if(document.getElementById("sport_check").checked){
+            hobby += "sport, ";
+        }
+        if(document.getElementById("spanie_check").checked){
+            hobby += "spanie, ";
+        }
+        if(hobby == ""){
+            hobby = "BRAK"
+        }
+        else{
+            hobby = hobby.slice(0, -2);
+            hobby += ".";
+            // spanie,_
+            // 01234567
+            // -8-7-6-5-4-3-2-1
+
+
+        }
+        document.getElementById("wybrane_hobby").innerText = "Wybrane hobby to: " + hobby;
     }
     else{
         check_info.innerText = " NIE POPRAWNE";

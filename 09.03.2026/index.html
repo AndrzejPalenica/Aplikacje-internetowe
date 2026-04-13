@@ -18,6 +18,34 @@
         <label for="haslo">Hasło:</label>
         <input type="password" id="haslo">
         <div id="haslo_alert" class="alert"></div>
+
+        <!-- WAŻNE musi być NAME (ten sam)-->
+        <div id="tytul_plec">Wybierz płeć</div>
+        <div>
+            <input type="radio" name="plec" id="plec_k" value="K">
+            <label for="plec_k">Kobieta</label>
+        </div>
+        <div>
+            <input type="radio" name="plec" id="plec_m" value="M" checked>
+            <label for="plec_m">Mężczyzna</label>
+        </div>
+        <div id="wybrana_plec"></div>
+
+        <div id="hobby_tytul">Wybierz swoje zainteresowania:</div>
+        <div>
+            <input type="checkbox" name="" id="sport_check">
+            <label for="sport_check">SPORT</label>
+        </div>
+        <div>
+            <input type="checkbox" name="" id="inf_check">
+            <label for="inf_check">INFORMATYKA</label>
+        </div>
+        <div>
+            <input type="checkbox" name="" id="spanie_check">
+            <label for="spanie_check">SPANIE</label>
+        </div>
+        <div id="wybrane_hobby"></div>
+
         <button type="button" id="btn">WYSLIJ</button>
     </form>
 
