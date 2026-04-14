@@ -5,9 +5,7 @@ btn.addEventListener("click", function(){
     let login = document.getElementById("login");
     let pin = document.getElementById("pin");
     let haslo = document.getElementById("haslo");
-
     valid = true;
-
     if(login.value == ""){
         document.getElementById("login_alert").innerText = "Puste pole!!!";
         document.getElementById("login_alert").style.visibility = "visible";
@@ -55,8 +53,7 @@ btn.addEventListener("click", function(){
         else{
             document.getElementById("wybrana_plec").innerText = "Wybrana płeć to MĘŻCZYZNA";
         }
-
-        var hobby = "";
+        let hobby = "";
         if(document.getElementById("inf_check").checked){
             hobby += "informatyka, ";
         }
@@ -75,10 +72,23 @@ btn.addEventListener("click", function(){
             // spanie,_
             // 01234567
             // -8-7-6-5-4-3-2-1
-
-
         }
         document.getElementById("wybrane_hobby").innerText = "Wybrane hobby to: " + hobby;
+
+        let wiek = document.getElementById("lista_wiek").value;
+        // alert(wiek);
+        if(wiek == "0-17"){
+            document.getElementById("wybrany_wiek").innerText = "Jesteś niepełnoletni";
+        }
+        else if(wiek == "18-65"){
+            document.getElementById("wybrany_wiek").innerText = "Jesteś pełnoletni";
+        }
+        else{
+            document.getElementById("wybrany_wiek").innerText = "Jesteś emerytem";
+        }
+        let komentarz = document.getElementById("komentarz").value;
+        document.getElementById("komentarz_text").innerText = komentarz;
+
     }
     else{
         check_info.innerText = " NIE POPRAWNE";
