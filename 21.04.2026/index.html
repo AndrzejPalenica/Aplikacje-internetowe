@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div style="margin-bottom: 10px;">WYBIERZ KURSY</div>
+        <div id="div_kursy">
+            <div>
+                <input type="checkbox"id="kurs_js_zdesperowani">
+                <label for="kurs_js_zdesperowani">KURS JAVASCRIPT DLA ZDESPEROWANYCH</label>
+            </div>
+            <div>
+                <input type="checkbox"id="kurs_js_odwazni">
+                <label for="kurs_js_odwazni">KURS JAVASCRIPT DLA ODWAŻNYCH</label>
+            </div>
+        </div>
+        <div id="kurs_check">
+
+        </div>
+        <div>Na ile rat chesz rozbić płatność:</div>
+        <div id="div_raty" style="margin-top: 20px;">
+            <Select id="raty">
+                <option value="5">5 rat</option>
+                <option value="10">10 rat</option>
+                <option value="20">20 rat</option>
+            </Select>
+        </div>
+        <div>
+            <label for="promocode">UŻYJ KODU:</label>
+            <input type="text" id="promocode">
+        </div>
+        <button type="button" id="button">OBLICZ</button>
+    </form>
+    <div id="suma">
+        <div id="koszt">KOSZT ZAMÓWIENIA:..... [KOD -20%/-60%]</div>
+        <div id="platnosc">PŁATNOŚĆ W [x] RATACH PO ...... ZŁ</div>
+    </div>
+</body>
+</html>
