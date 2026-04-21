@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="bok_a">Bok A:</label>
+            <input type="number" id="bok_a">
+        </div>
+        <div id="bok_a_check">
+        </div>
+        <div>
+            <label for="bok_b">Bok B:</label>
+            <input type="number" id="bok_b">
+        </div>
+        <div id="bok_b_check">
+        </div>
+        <div><p>Co chcesz policzyć?</p></div>
+        <!-- <div>
+            <input type="radio" id="pole" name="calculation">
+            <label for="pole">Pole prostokąta</label>
+        </div>
+        <div>
+            <input type="radio" id="obwod" name="calculation">
+            <label for="obwod">Obwód prostokąta</label>
+        </div> -->
+
+        <div id="oblicz_pole_obwod">
+            <select name="pole_obwod" id="pole_obwod">
+                <option value="pole" id="pole">pole</option>
+                <option value="obwod" id="obwod">obwód</option>
+            </select>
+        </div>
+        <div id="radio_check">
+        </div>
+        <button type="button" id="przycisk">Oblicz</button>
+        <div id="wynik"></div>
+    </form>
+</body>
+</html>
